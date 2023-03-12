@@ -249,3 +249,6 @@ jobs:
           file: ./Xray-${{ env.ASSET_NAME }}.zip*
           tag: ${{ github.ref }}
           file_glob: true
+
+      - name: GH Release
+        uses: softprops/action-gh-release@v0.1.15
